@@ -1,0 +1,390 @@
+/* Center the login container in the middle of the page */
+.login-container {
+  background-color: #ffe6f2; /* Light pink background */
+  border-radius: 10px;
+  padding: 40px; /* Increased padding for more space */
+  width: 400px; /* Increased width for a larger box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the box */
+}
+
+/* Style for the heading above the login box */
+.login-title {
+  color: #fe63a1; /* Bright pink color for the title */
+  text-align: center;
+  font-size: 28px; /* Slightly larger font for the title */
+  margin-bottom: 30px; /* Added more space below the title */
+}
+
+/* Style for the login form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  margin-bottom: 20px;
+}
+
+.login-input label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-input input {
+  padding: 12px; /* Slightly increased padding for input fields */
+  border-radius: 5px;
+  border: 1px solid #fe63a1;
+  font-size: 16px;
+}
+
+.login-button {
+  background-color: #fe63a1; /* Bright pink background */
+  color: white;
+  border: none;
+  padding: 14px; /* Increased padding for the button */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #7c3652;
+}
+
+/* Light Pink Theme with Baby Pink and Slightly Darker Font */
+
+/* Body Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffe6f2; /* Light pink background */
+  color: #9b6b6b; /* Slightly darker text */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+  background-color: #ffe6f2; /* Light pink background in dark mode */
+  color: #9b6b6b; /* Slightly darker font in dark mode */
+}
+
+/* Background Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Soft white overlay */
+  z-index: -1;
+}
+
+/* Title Styling */
+.project-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  color: #fe63a1; /* Bright pink title color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+body.dark-mode .project-title {
+  color: #fe63a1; /* Bright pink color for title in dark mode */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Divider */
+.divider {
+  width: 80%;
+  margin: 0 auto 20px auto;
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    #fe63a1,
+    #fe63a1
+  ); /* Bright pink gradient */
+}
+
+/* Category Buttons */
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.category-buttons button {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(
+    135deg,
+    #ffe6f2,
+    #fe63a1
+  ); /* Light pink to bright pink gradient */
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.category-buttons button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  color: #fe63a1; /* Bright pink text on hover */
+}
+
+/* Active Button */
+.category-buttons .active-button {
+  background: linear-gradient(135deg, #fe63a1, #ffe6f2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+/* Shopping Container */
+.Shopping-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+body.dark-mode .Shopping-Container {
+  background-color: #ffe6f2; /* Light pink background for shopping container */
+}
+
+/* Category Display */
+.category-display {
+  animation: fadeIn 0.5s ease-in-out;
+  text-align: center;
+}
+
+.category-display h2 {
+  font-size: 2rem;
+  color: #fe63a1; /* Bright pink heading */
+  margin-bottom: 10px;
+}
+
+body.dark-mode .category-display h2 {
+  color: #fe63a1; /* Bright pink in dark mode */
+}
+
+.category-display p {
+  font-size: 1.2rem;
+  color: #9b6b6b;
+  margin-bottom: 20px;
+}
+
+body.dark-mode .category-display p {
+  color: #ffe6f2; /* Light pink text in dark mode */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loader */
+.loader {
+  font-size: 1.5rem;
+  color: #fe63a1;
+  text-align: center;
+  margin-top: 20px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+body.dark-mode .loader {
+  color: #fe63a1; /* Bright pink loader text */
+}
+
+/* Default Message */
+.default-message {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #9b6b6b;
+  margin-top: 20px;
+}
+
+body.dark-mode .default-message {
+  color: #ffe6f2; /* Light pink default message */
+}
+
+/* Reset Button */
+.reset-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reset-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #ff595e;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.reset-button:hover {
+  transform: scale(1.1);
+  background: #fe63a1;
+}
+
+/* Theme Switch */
+.theme-switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  border-radius: 50px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #fe63a1; /* Bright pink when checked */
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+/* Category Content - Image/Component Styling */
+.category-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.category-content img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-content img:hover {
+  transform: scale(1.05);
+}
+/* Style for the Add to Cart button */
+.add-to-cart-button {
+  background-color: #fe63a1;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #ff4081;
+}
+
+/* Style for quantity controls */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity-button {
+  background-color: #fe63a1;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.quantity-button:hover {
+  background-color: #ff4081;
+}
